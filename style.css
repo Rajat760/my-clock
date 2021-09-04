@@ -1,0 +1,115 @@
+body {
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+#clockcontainer {
+    position: relative;
+    /* border: 2px solid red; */
+    /* background-color:aqua; */
+    height: 40vw;
+    width: 40vw;
+    background: url(images/clock.png), no-repeat;
+    background-size: 100%;
+    margin: auto;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+
+}
+
+#minute{
+    width: 1.8%;
+    height: 35%;
+    top: 15%;
+    left: 48.85%;
+    opacity: 0.8;  
+    /* background-color: cornsilk; */
+}
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+
+}
+.cons {
+    background-color: cornsilk;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media(max-width: 1050px) {
+    .title {
+        font-size: 50px;
+    }
+    .cons {
+        font-size: 70px;
+    }
+    #clockcontainer {
+        position: relative;
+        /* border: 2px solid red; */
+        /* background-color:aqua; */
+        height: 60vw;
+        width: 60vw;
+        background: url(images/clock.png), no-repeat;
+        background-size: 100%;
+        margin: auto;
+    }
+}
+@media(max-width: 500px) {
+    .title {
+        font-size: 40px;
+    }
+    .cons {
+        font-size: 50px;
+    }
+    #clockcontainer {
+        position: relative;
+        /* border: 2px solid red; */
+        /* background-color:aqua; */
+        height: 70vw;
+        width: 70vw;
+        background: url(images/clock.png), no-repeat;
+        background-size: 100%;
+        margin: auto;
+    }
+}
+@media(max-width: 290px) {
+    .title {
+        font-size: 35px;
+    }
+    .cons {
+        font-size: 33px;
+    }
+    #clockcontainer {
+        position: relative;
+        /* border: 2px solid red; */
+        /* background-color:aqua; */
+        height: 70vw;
+        width: 70vw;
+        background: url(images/clock.png), no-repeat;
+        background-size: 100%;
+        margin: auto;
+    }
+}
